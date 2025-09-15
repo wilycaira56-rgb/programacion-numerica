@@ -1,0 +1,24 @@
+import re
+
+# ingresar función
+funcion = input("Ingrese la función (ejemplo: x**2 + y - z): ")
+
+# identificar variables (letras distintas que aparezcan)
+variables = sorted(set(re.findall(r"[a-zA-Z]", funcion)))
+
+# preguntar restricciones
+restricciones = []
+resp = input("¿La función tiene restricciones? (si/no): ").strip().lower()
+if resp == "si":
+    while True:
+        r = input("Ingrese una restricción (o 'fin' para terminar): ")
+        if r.lower() == "fin":
+            break
+        restricciones.append(r)
+
+# mostrar resultados
+print("\n📌 Información de la función:")
+print("Función ingresada:", funcion)
+print("Variables identificadas:", variables)
+if restricciones:
+    print("Restricciones:")
