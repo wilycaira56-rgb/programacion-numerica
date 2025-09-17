@@ -65,7 +65,7 @@
 
         <div>
           <div class="label">Repositorio</div>
-          <div class="value">(Pega el link de tu GitHub aquí)</div>
+          <div class="value">(https://wilycaira56-rgb.github.io/programacion-numerica/)</div>
         </div>
       </div>
 
